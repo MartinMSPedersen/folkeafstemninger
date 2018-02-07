@@ -59,7 +59,8 @@ for (aar in c(2009, 2014, 2015)) {
 
 folkeafstemninger$Dato <- as.factor(folkeafstemninger$Dato)
 folkeafstemninger$Område <- as.factor(folkeafstemninger$Område)
-#folkeafstemninger$Stemme <- as.integer(folkeafstemninger$Stemme)
+folkeafstemninger$Stemme <- as.factor(folkeafstemninger$Stemme)
+folkeafstemninger$Antal <- as.integer(folkeafstemninger$Antal)
 
 save(folkeafstemninger, file = "folkeafstemninger.RData")
 
