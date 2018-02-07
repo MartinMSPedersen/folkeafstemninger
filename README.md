@@ -1,6 +1,6 @@
 # Folkeafstemninger
 En R pakke som indeholder et datasæt med resultaterne af danske folkeafstemninger.
-Pakken kan installeres med: `install_github("MartinMSPedersen/folkeafstemninger")`
+Pakken kan installeres med: `devtools::install_github("MartinMSPedersen/folkeafstemninger")`
 
 ## Ikke færdig ##
 
