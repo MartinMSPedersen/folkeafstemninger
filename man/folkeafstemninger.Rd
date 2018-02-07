@@ -4,10 +4,9 @@
 \name{folkeafstemninger}
 \alias{folkeafstemninger}
 \title{Folkeafstemninger i Danmark}
-\format{En data frame med 12 variabler: \code{Dato}, \code{StepType}, \code{StedTekst},
-  \code{Partiid}, \code{PartiBogstav}, \code{PartiNavn}, \code{StemmerAntal}, 
-  \code{Stemmeberettigede}, \code{DeltagelsePct}, \code{IAltGyldigeStemmer},
-  \code{BlankeStemmer} and \code{AndreUgyldigeStemmer}}
+\format{En data frame med 7 variabler: \code{Dato}, \code{Område}, \code{Sted},
+  \code{Stemme}, \code{Antal}, 
+  \code{Stemmeberettigede}, \code{DeltagelsePct}}
 \usage{
 folkeafstemninger
 }
