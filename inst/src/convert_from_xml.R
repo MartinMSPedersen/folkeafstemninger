@@ -18,7 +18,6 @@ valg_struktur <- function(uri) {
   landsdel_navne <<- new.env()
   storkreds_navne <<- new.env()
   opstillingskreds_navne <<- new.env()
-  afstemningsomraade_navne <<- new.env()
   storkreds_til_landsdel <<- new.env()
   opstillingskreds_til_storkreds <<- new.env()
   afstemningsomraade_til_opstillingskreds <<- new.env()
@@ -90,11 +89,13 @@ convert_one_file <- function(uri) {
           Opstillingskreds == "Færøerne") {
         Storkreds <- Opstillingskreds
         Landsdel <- Opstillingskreds
+        Afstemningsomraade
+      } else {
+        storkreds_id <- get(StedID, envir = opstillingskreds_til_storkreds)
+        Storkreds <- get(storkreds_id, envir = storkreds_navne)
+        landsdel_id <- get(storkreds_id, envir = storkreds_til_landsdel)
+        Landsdel <- get(landsdel_id, envir = landsdel_navne)
       }
-      storkreds_id <- get(StedID, envir = opstillingskreds_til_storkreds)
-      Storkreds <- get(storkreds_id, envir = storkreds_navne)
-      landsdel_id <- get(storkreds_id, envir = storkreds_til_landsdel)
-      Landsdel <- get(landsdel_id, envir = landsdel_navne)
     }
     if (StedType == "Afstemningsomraade") {
       Afstemningsomraade <- StedTekst
@@ -164,5 +165,5 @@ folkeafstemninger$Parti <- factor(folkeafstemninger$Parti)
 folkeafstemninger$Antal <- as.integer(folkeafstemninger$Antal)
 
 
-save(folkeafstemninger, file = "folkeafstemninger.RData")
+#save(folkeafstemninger, file = "folkeafstemninger.RData")
 
