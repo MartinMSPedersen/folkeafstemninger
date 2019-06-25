@@ -4,8 +4,8 @@
 \name{folkeafstemninger}
 \alias{folkeafstemninger}
 \title{Folkeafstemninger i Danmark}
-\format{En data frame med 7 variabler: \code{Dato}, \code{Område}, \code{Sted},
-  \code{Stemme}, \code{Antal}, 
+\format{En data frame med 9 variabler: \code{Dato}, \code{Landsdel}, \code{Storkreds}, \code{Opstillingskreds},
+  \code{Afstemningsomraade}, \code{Parti}, \code{Antal},
   \code{Stemmeberettigede}, \code{DeltagelsePct}}
 \usage{
 folkeafstemninger
