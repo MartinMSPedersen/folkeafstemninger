@@ -161,7 +161,6 @@ folkeafstemninger$Storkreds <- factor(folkeafstemninger$Storkreds)
 folkeafstemninger$Opstillingskreds <- factor(folkeafstemninger$Opstillingskreds)
 folkeafstemninger$Afstemningsomraade <- factor(folkeafstemninger$Afstemningsomraade)
 folkeafstemninger$Parti <- factor(folkeafstemninger$Parti)
-folkeafstemninger$Bogstav <- factor(folkeafstemninger$Bogstav)
 folkeafstemninger$Antal <- as.integer(folkeafstemninger$Antal)
 
 
