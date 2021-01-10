@@ -1,6 +1,6 @@
 Package: folkeafstemninger
 Title: Data for folkeafstemninger i Danmark
-Version: 0.9
+Version: 0.10
 Author: Martin M. S. Pedersen
 Maintainer: Martin M. S. Pedersen <martin@linux.com>
 Description: Denne pakke indeholder data for alle folkeafstemninger foretaget i Danmark. For årene 2009, 2014 og 2015 er der resultater fra alle valgsted. For de resterende afstemninger er der det samlet resultat. 
