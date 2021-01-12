@@ -1,1 +1,4 @@
-test_check(folkeafstemninger)
+library(testthat)
+library(folkeafstemninger)
+
+test_check("folkeafstemninger")
