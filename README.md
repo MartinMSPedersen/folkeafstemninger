@@ -1,4 +1,6 @@
 # Folkeafstemninger
+![R-CMD-check](https://github.com/MartinMSPedersen/folkeafstemninger/workflows/R-CMD-check/badge.svg)  
+
 En R pakke som indeholder et datasæt med resultaterne af danske folkeafstemninger.
 Pakken kan installeres med: `devtools::install_github("MartinMSPedersen/folkeafstemninger")`
 
